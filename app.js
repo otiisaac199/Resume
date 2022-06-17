@@ -26,9 +26,6 @@ hamburger.addEventListener("click", (item) => {
   console.log(item);
   // mobile_menu.classList.toggle("active");
 });
-navlinksA.addEventListener("click", () => {
-  navlinks.style.display = "block";
-});
 
 // page loader
 

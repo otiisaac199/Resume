@@ -762,7 +762,9 @@ body {
 .contact h1 {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
+  text-align: center;
   margin-bottom: 90px;
+  padding: 0 20px;
 }
 
 .contact h1 span {
@@ -787,7 +789,7 @@ body {
 
 .contact .contact-info .contact-infoo .col-1-col {
   position: relative;
-  width: 23.5%;
+  width: 23%;
   height: auto;
   padding: 30px 20px;
   margin: 20px 10px 60px 10px;
@@ -853,15 +855,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  word-wrap: anywhere;
 }
 
 .contact .contact-info .col-1-col p {
   font-size: 1.1rem;
   line-height: 25px;
-}
-
-.contact .contact-info .col-1-col .email p {
-  font-size: 0.97rem;
 }
 
 .contact .contact-info .col-1-col i {
@@ -1036,11 +1035,25 @@ body {
   .nav-links a {
     margin: 20px 0 !important;
   }
+  .contact .col-1-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 45% !important;
+  }
+  .contact .col-1-col i {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .header {
-    padding-top: 50px;
+    padding-top: 50px !important;
     height: auto;
   }
   .header::after {
@@ -1129,6 +1142,9 @@ body {
   }
   .projects .projects-item .projects-item-content {
     width: 80%;
+  }
+  .contact .col-1-col {
+    width: 85% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

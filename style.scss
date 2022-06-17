@@ -560,8 +560,9 @@ body {
   h1 {
     font-family: "Roboto", sans-serif;
     font-size: 3rem;
-    // font-weight: normal;
+    text-align: center;
     margin-bottom: 90px;
+    padding: 0 20px;
     span {
       color: var(--color2);
     }
@@ -575,7 +576,7 @@ body {
       flex-wrap: wrap;
       .col-1-col {
         position: relative;
-        width: 23.5%;
+        width: 23%;
         height: auto;
         // border: 2px solid var(--color2);
         padding: 30px 20px;
@@ -630,14 +631,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      word-wrap: anywhere;
       p {
         font-size: 1.1rem;
         line-height: 25px;
-      }
-      .email {
-        p {
-          font-size: 0.97rem;
-        }
       }
       i {
         margin-right: 15px;
@@ -748,11 +745,23 @@ body {
       margin: 20px 0 !important;
     }
   }
+  .contact {
+    .col-1-col {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 45% !important;
+
+      i {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
   .header {
-    padding-top: 50px;
+    padding-top: 50px !important;
     height: auto;
     &::after {
       height: 397px;
@@ -835,6 +844,11 @@ body {
       .projects-item-content {
         width: 80%;
       }
+    }
+  }
+  .contact {
+    .col-1-col {
+      width: 85% !important;
     }
   }
 }
