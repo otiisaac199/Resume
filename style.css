@@ -806,7 +806,8 @@ body {
   padding: 40px 20px;
 }
 
-.contact .contact-info .contact-infoo .col-1-col:hover .tooltext-tip {
+.contact .contact-info .contact-infoo .col-1-col:hover .tooltext-tip,
+.contact .contact-info .contact-infoo .col-1-col:active .tooltext-tip {
   visibility: visible;
   -webkit-transition: 0.5s;
   transition: 0.5s;

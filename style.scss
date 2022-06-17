@@ -590,10 +590,14 @@ body {
         &:nth-child(2) {
           padding: 40px 20px;
         }
-        &:hover .tooltext-tip {
+        &:hover .tooltext-tip,
+        &:active .tooltext-tip {
           visibility: visible;
           transition: 0.5s;
         }
+        // &:active .tooltext-tip {
+        //   transition-delay: 2s;
+        // }
         .tooltext-tip {
           font-family: "Roboto", sans-serif;
           visibility: hidden;
