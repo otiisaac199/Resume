@@ -489,7 +489,6 @@ body {
           box-shadow: -4px -4px 10px var(--background2), 4px 4px 20px var(--background2);
   background-color: #dfdfdf;
   border-radius: 10px;
-  border: 3px solid var(--color2);
   padding: 4rem;
   margin: 0 20px 40px 20px;
   display: -webkit-box;

@@ -9,7 +9,7 @@
   --bg-color: rgb(88, 88, 88);
 }
 
-// loader
+// loader LOADER
 @keyframes ldio-f3tzucmg9bb-o {
   0% {
     opacity: 1;
@@ -107,7 +107,7 @@ body {
   background: var(--background1);
 }
 
-// header
+// header HEADER
 .header {
   background-image: url(Images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg);
   width: 100%;
@@ -190,7 +190,7 @@ body {
   }
 }
 
-// the nav bar
+// the nav bar THE NAV BAR
 .nav-container {
   position: fixed;
   top: 0;
@@ -293,7 +293,7 @@ body {
 }
 // end of nav bar
 
-// services
+// services SERVICES
 .services {
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@ body {
       4px 4px 20px var(--background2);
     background-color: rgb(223, 223, 223);
     border-radius: 10px;
-    border: 3px solid var(--color2);
+    // border: 3px solid var(--color2);
     padding: 4rem;
     margin: 0 20px 40px 20px;
     display: flex;
@@ -426,7 +426,7 @@ body {
 }
 // end of services
 
-// pROJECTS
+// pROJECTS Projects
 
 .projects {
   display: flex;
@@ -477,7 +477,7 @@ body {
 }
 // end of projects
 
-// about
+// about ABOUT
 .about {
   font-family: "Roboto", sans-serif;
   margin: 170px 0;
@@ -548,7 +548,7 @@ body {
 }
 // end of about
 
-// contacts
+// contacts CONTACTS
 .contact {
   display: flex;
   flex-direction: column;
@@ -645,7 +645,7 @@ body {
 }
 // end of contacts
 
-// footer
+// footer FOOTER
 
 .footer {
   background-color: var(--bg-color);
@@ -677,7 +677,7 @@ body {
   }
 }
 
-// animations
+// animations ANIMATIONS
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -725,7 +725,7 @@ body {
   }
 }
 
-// media screens
+// media screens MEDIA SCREEN
 
 @media screen and (max-width: 800px) {
   .hamburger {

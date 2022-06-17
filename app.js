@@ -6,7 +6,7 @@
 
 document.addEventListener("scroll", () => {
   let scroll_position = window.scrollY;
-  if (scroll_position > 250) {
+  if (scroll_position > 350) {
     navC.style.backgroundColor = "rgba(88, 88, 88, .6)";
   } else {
     navC.style.backgroundColor = "transparent";
