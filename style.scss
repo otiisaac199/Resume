@@ -856,3 +856,8 @@ body {
     }
   }
 }
+@media screen and (max-width: 397px) {
+  .header::after {
+    height: 392px;
+  }
+}
