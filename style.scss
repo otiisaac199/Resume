@@ -439,6 +439,7 @@ body {
     font-size: 4rem;
     margin-bottom: 60px;
     text-transform: uppercase;
+    text-align: center;
     span {
       color: var(--color2);
     }
@@ -480,6 +481,7 @@ body {
 
 // about ABOUT
 .about {
+  padding: 0 25px;
   font-family: "Roboto", sans-serif;
   margin: 170px 0;
   display: flex;
@@ -747,6 +749,19 @@ body {
       margin: 20px 0 !important;
     }
   }
+  .header {
+    padding-top: 50px;
+    height: auto;
+    &::after {
+      height: 397px;
+    }
+  }
+
+  .container {
+    transform: scale(0.75);
+    margin-left: 0 !important;
+  }
+
   .services {
     .services-item {
       padding: 2.5rem;
@@ -760,8 +775,36 @@ body {
       }
     }
   }
+  .about {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    .about-text-content {
+      width: 85%;
+      margin-bottom: 40px;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .about-img-content {
+      transform: scale(0.8);
+      margin-right: 0;
+    }
+  }
 }
+
+@media screen and (max-width: 530px) {
+  .header::after {
+    height: 472px;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  .container {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
   .services {
     .services-item-content {
       flex-direction: column;
@@ -772,6 +815,18 @@ body {
     }
     h1 {
       font-size: 3.5rem !important;
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 3rem;
+    }
+    .projects-item {
+      flex-direction: column;
+      align-items: center;
+      .projects-item-content {
+        width: 80%;
+      }
     }
   }
 }

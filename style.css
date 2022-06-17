@@ -593,6 +593,7 @@ body {
   font-size: 4rem;
   margin-bottom: 60px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .projects h1 span {
@@ -653,6 +654,7 @@ body {
 }
 
 .about {
+  padding: 0 25px;
   font-family: "Roboto", sans-serif;
   margin: 170px 0;
   display: -webkit-box;
@@ -1034,6 +1036,18 @@ body {
   .nav-links a {
     margin: 20px 0 !important;
   }
+  .header {
+    padding-top: 50px;
+    height: auto;
+  }
+  .header::after {
+    height: 397px;
+  }
+  .container {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    margin-left: 0 !important;
+  }
   .services .services-item {
     padding: 2.5rem;
   }
@@ -1043,9 +1057,40 @@ body {
   .services .services-tech p {
     font-size: 1.2rem !important;
   }
+  .about {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .about-text-content {
+    width: 85%;
+    margin-bottom: 40px;
+  }
+  .about .about-text-content h1 {
+    font-size: 3rem;
+  }
+  .about .about-img-content {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header::after {
+    height: 472px;
+  }
 }
 
 @media screen and (max-width: 450px) {
+  .container h1 {
+    font-size: 3rem !important;
+  }
   .services .services-item-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1060,6 +1105,21 @@ body {
   }
   .services h1 {
     font-size: 3.5rem !important;
+  }
+  .projects h1 {
+    font-size: 3rem;
+  }
+  .projects .projects-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .projects-item .projects-item-content {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
