@@ -302,8 +302,9 @@ body {
   h1 {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    padding: 0 0 60px 0;
+    padding: 0 15px 60px 15px;
     font-size: 5rem;
+    text-align: center;
     span {
       color: var(--color2);
     }
@@ -574,7 +575,7 @@ body {
         position: relative;
         width: 23.5%;
         height: auto;
-        border: 2px solid var(--color2);
+        // border: 2px solid var(--color2);
         padding: 30px 20px;
         margin: 20px 10px 60px 10px;
         cursor: default;
@@ -737,13 +738,40 @@ body {
     flex-direction: column;
     background-color: var(--bg-color);
     justify-content: center;
-    left: 0;
+    right: 0;
     top: 0;
     width: 0;
     overflow: hidden;
     height: 100%;
     a {
       margin: 20px 0 !important;
+    }
+  }
+  .services {
+    .services-item {
+      padding: 2.5rem;
+    }
+    .services-tech {
+      i {
+        font-size: 1.3rem !important;
+      }
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .services {
+    .services-item-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .services-item {
+      width: 80%;
+    }
+    h1 {
+      font-size: 3.5rem !important;
     }
   }
 }
