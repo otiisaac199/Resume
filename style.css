@@ -1013,7 +1013,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
   .hamburger {
     visibility: visible;
   }
@@ -1036,6 +1036,9 @@ body {
   .nav-links a {
     margin: 20px 0 !important;
   }
+}
+
+@media screen and (max-width: 800px) {
   .header {
     padding-top: 50px;
     height: auto;
@@ -1088,6 +1091,12 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .nav-container {
+    width: 100vw;
+  }
+  .header::after {
+    height: 337px;
+  }
   .container h1 {
     font-size: 3rem !important;
   }

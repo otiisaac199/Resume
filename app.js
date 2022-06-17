@@ -18,6 +18,7 @@ document.addEventListener("scroll", () => {
 const hamburger = document.querySelector(".hamburger-bars");
 const navC = document.querySelector(".nav");
 const navlinks = document.querySelector(".nav-links");
+const navlinksA = document.querySelector(".nav-links a");
 
 hamburger.addEventListener("click", (item) => {
   hamburger.classList.toggle("active");
@@ -25,6 +26,11 @@ hamburger.addEventListener("click", (item) => {
   console.log(item);
   // mobile_menu.classList.toggle("active");
 });
+navlinksA.addEventListener("click", () => {
+  navlinks.style.display = "block";
+});
+
+// page loader
 
 const pageLoader = document.querySelector(
   ".loadingio-spinner-dual-ball-f4bxwls9top"
