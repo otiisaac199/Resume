@@ -736,6 +736,13 @@ body {
 }
 
 @media screen and (max-width: 530px) {
+  .header {
+    h1 {
+      span {
+        opacity: 0;
+      }
+    }
+  }
   .header::after {
     height: 472px;
   }
