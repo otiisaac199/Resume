@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
 });
 
 // intersection observer
-let items = document.querySelectorAll(".services-item-content");
+let items = document.querySelectorAll(".itemss");
 
 let Observer = new IntersectionObserver(
   (entries) => {
